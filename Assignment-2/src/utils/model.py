@@ -1,8 +1,15 @@
 import tensorflow as tf
 import time
 import os
+import logging
+
+
+log_file='logs/general_logs/training.log'
+log_format='%(levelname)s: %(asctime)s: %(message)s'
+logging.basicConfig(filename=log_file,level=logging.INFO,format=log_format)
 
 def create_model(lf,opt,met,num):
+    logging.info('>>>>>Creating Layers')
     layers=[
         tf.keras.layers.Flatten(input_shape=[28,28],name='input_Layer'),
         tf.keras.layers.Dense(400,activation='relu'),
@@ -22,4 +29,5 @@ def get_filename(name):
 def save_model(model,name,dir):
     filename=get_filename(name)
     path=os.path.join(dir,filename)
+    logging.info('>>>>>Saving the model at {} with name:{}'.format(path,filename))
     model.save(path)

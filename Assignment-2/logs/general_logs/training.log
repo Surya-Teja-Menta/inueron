@@ -1,0 +1,20 @@
+INFO: 2021-10-14 21:59:56,994: NumExpr defaulting to 4 threads.
+INFO: 2021-10-14 21:59:58,708: >>>>>Configuring parameters
+INFO: 2021-10-14 21:59:58,709: >>>>> Extracting config.yaml
+INFO: 2021-10-14 21:59:58,741: >>>>>Started extracting data:
+INFO: 2021-10-14 22:00:01,330: >>>>>Started Splitting data:
+INFO: 2021-10-14 22:00:05,047: >>>>>Shapes
+INFO: 2021-10-14 22:00:05,076: >>>>>Creating Layers
+INFO: 2021-10-14 22:00:05,715: >>>>>Model Training
+INFO: 2021-10-14 22:02:56,858: >>>>>Saving the model at artifacts/model/20211014_220256_model.h5 with name:20211014_220256_model.h5
+INFO: 2021-10-14 22:03:31,569: Test Loss, Test Accuracy are:[0.08689892292022705, 0.9732000231742859]
+INFO: 2021-10-14 22:03:39,176: 
+History:
+        loss  accuracy  val_loss  val_accuracy
+0  0.205901  0.937727  0.102113        0.9702
+1  0.089742  0.972909  0.081954        0.9784
+2  0.064108  0.979455  0.087010        0.9742
+3  0.049048  0.984655  0.093452        0.9764
+4  0.039804  0.987309  0.094201        0.9756
+5  0.033131  0.989800  0.097745        0.9814
+6  0.029386  0.990509  0.082676        0.9794
